@@ -1,8 +1,14 @@
-const mongoose = require("mongoose");
-const express = require("express");
-const dotenv = require("dotenv");
-const bodyParser = require("body-parser");
-const cors = require("cors");
+import express from "express";
+import bodyParser from "body-parser";
+import mongoose from "mongoose";
+import dotenv from "dotenv";
+import cors from "cors";
+
+// const mongoose = require("mongoose");
+// const express = require("express");
+// const dotenv = require("dotenv");
+// const bodyParser = require("body-parser");
+// const cors = require("cors");
 
 dotenv.config();
 
