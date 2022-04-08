@@ -3,6 +3,7 @@ import bodyParser from "body-parser";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
 import cors from "cors";
+import memberRoutes from "./routes/members";
 
 // const mongoose = require("mongoose");
 // const express = require("express");
@@ -16,6 +17,8 @@ const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
 app.use(cors());
+
+app.use("/member", burgerRoutes);
 
 const dbConnect = async () => {
   try {
