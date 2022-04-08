@@ -1,4 +1,5 @@
-const mongoose = require("mongoose");
+import mongoose from "mongoose";
+// const mongoose = require("mongoose");
 
 const memberSchema = new mongoose.Schema({
   id: Number,
