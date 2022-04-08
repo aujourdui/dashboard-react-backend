@@ -1,4 +1,4 @@
-import Member from "../models/burger";
+import Member from "../models/member.js";
 
 export const getMembers = async (req, res) => {
   try {
