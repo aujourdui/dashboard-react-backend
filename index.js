@@ -1,10 +1,15 @@
 const mongoose = require("mongoose");
 const express = require("express");
 const dotenv = require("dotenv");
+const bodyParser = require("body-parser");
+const cors = require("cors");
 
 dotenv.config();
 
 const app = express();
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
+app.use(cors());
 
 const dbConnect = async () => {
   try {
