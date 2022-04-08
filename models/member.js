@@ -1,27 +1,12 @@
-import mongoose from "mongoose";
+const mongoose = require("mongoose");
 
-const personSchema = mongoose.Schema({
-    id:Number,
-    fullName:String,
-    username:String,
-    title:String,
-    email:String,
-    phoneNumber:String,
-    dateofBirth:{
-        type:Date,
-        default:new Date()
-    },
-    shortSummary:String,
-    summary:String,
-    image:String,
-    createdAt:{
-        type:Date,
-        default: new Date()
-    },
-    qrCode:String,
-    githubLink:String
+const memberSchema = new mongoose.Schema({
+  id: Number,
+  name: String,
+  position: String,
+  image: String,
 });
 
-const Person = mongoose.model("Person", personSchema);
+const Member = mongoose.model("Member", memberSchema);
 
-export default Person;
+export default Member;
