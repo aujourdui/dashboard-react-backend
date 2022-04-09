@@ -29,6 +29,10 @@ app.get("/test", (_req, res) => {
   });
 });
 
+app.get("/", (req, res) => {
+  res.send("Hello from Express!");
+});
+
 const dbConnect = async () => {
   try {
     await mongoose.connect(process.env.MONGO_URL);
