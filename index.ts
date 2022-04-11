@@ -3,14 +3,8 @@ import bodyParser from "body-parser";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
 import cors from "cors";
-import memberRoutes from "./routes/members.js";
-import taskRoutes from "./routes/tasks.js";
-
-// const mongoose = require("mongoose");
-// const express = require("express");
-// const dotenv = require("dotenv");
-// const bodyParser = require("body-parser");
-// const cors = require("cors");
+import memberRoutes from "./routes/members";
+import taskRoutes from "./routes/tasks";
 
 dotenv.config();
 
